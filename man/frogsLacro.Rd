@@ -3,14 +3,13 @@
 \docType{data}
 \name{frogsLacro}
 \alias{frogsLacro}
-\title{Simulated datasets for comparison with 'frogs' generated with function simulacro() (see examples in ?simulacro()).}
-\format{list of 8 lists of 10 data frames each with 164 rows and 6 columns each.}
+\title{Simulated datasets for comparison with 'frogs' dataset generated with function simulacro() (see examples in ?simulacro).}
+\format{list of 8 lists of 10 dataframes each with 164 rows and 6 columns each.}
 \usage{
 data(frogsLacro)
 }
 \description{
-List of eight lists (one per different Alpha value used) each containing ten data frames of simulated sigthing locations built to emulate dataset 'frogs' (data(frogs)).
-The columns of all 80 data sets are as follows:
+List of eight lists (one per different Alpha value used) each containing ten dataframes of simulated sigthing locations built to simulate 'frogs' dataset.
 }
 \details{
 \itemize{

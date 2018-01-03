@@ -4,27 +4,30 @@
 \alias{EM}
 \title{Runs the EM algorithm.}
 \usage{
-EM(dataset, cval = 2, randompoints)
+EM(dataset, randompoints, sigma, pi)
 }
 \arguments{
 \item{dataset}{the data frame to be analised (WGS84, colums order should be "year","lat","long","origin")}
 
-\item{cval}{number of numeric vector of values of C to be tested for.}
-
 \item{randompoints}{data frame of 'y' and 'x' coordinates of random points (projected coordinate system)}
+
+\item{sigma}{starting value for the standard deviation of the natural dispersal kernel (assumed to be a half normal)}
+
+\item{pi}{starting value for the proportion of natural points in the dataset}
 }
 \value{
 dataset argument with two additional colums. 'dist': distance from nearest point of natural origin or nearest anchor point (see Details); 'Pnat': probability of being of natural origin.
 }
 \description{
-Computes user-defined one dimensional dispersal kernels.
+Attributes to the populations in an invasion time series a probability value of being of natural origin, as opposite of anthropogenic origin.
 }
 \examples{
 data('nzp')
 data('frogs')
 randp<- RPG(rpopn=1000, boundary=nzp, SP= 'random_frog')
-\dontrun{
-frogsEM<- EM(dataset= frogs, randompoints= randp)
- }
+frogsEM<- EM(dataset= frogs, randompoints= randp, sigma=6, pi=0.5)
+}
+\author{
+Beatrix Jones, Luca Butikofer
 }
 

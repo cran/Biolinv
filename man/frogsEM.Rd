@@ -4,13 +4,12 @@
 \name{frogsEM}
 \alias{frogsEM}
 \title{Frogs sighting locations and the output of the EM() function.}
-\format{A data frame with 194 rows and 6 variables}
+\format{A dataframe with 194 rows and 6 variables}
 \usage{
 data(frogsEM)
 }
 \description{
-Dataset containing sighting locations of L. raniformis in New Zealand as returned by function EM().
-The columns are as follows:
+Version of 'frogs' Dataset containing sighting locations of L. raniformis in New Zealand as returned by function EM().
 }
 \details{
 \itemize{

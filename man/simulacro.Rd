@@ -15,7 +15,7 @@ simulacro(INIDIST, YEARS, BOUNDARY, NNAT, NANTH, A, C = 2, X, HSM = FALSE,
 
 \item{BOUNDARY}{object of class sp::SpatialPolygons or raster:RasterLayer (0: inside, >= 1: outside) used as geographi boundary for function RPG(). These are the geographic limits within which points or anthropic origin can be generated.}
 
-\item{NNAT}{either a vector of numbers of natural points to be generated every year  or an integer number of points to be generated per time-step..}
+\item{NNAT}{either a vector of numbers of natural points to be generated every year  or an integer number of points to be generated per time-step.}
 
 \item{NANTH}{either a vector of numbers of anthropic points to be generated every year or an integer number of points to be generated per time-step.}
 
@@ -25,7 +25,7 @@ simulacro(INIDIST, YEARS, BOUNDARY, NNAT, NANTH, A, C = 2, X, HSM = FALSE,
 
 \item{X}{set of possible interpopulation distances [km].}
 
-\item{HSM}{either a Habitat Suitability Map ([0;1], object of class raster::RasterLayer, probability raster giving value of likelyhood of a viable population establishing each cell) or the geographic boundaries (object of class sp::SpatialPolygons) within which to generate points of natural origin.}
+\item{HSM}{either a Habitat Suitability Map ([0;1], object of class raster::RasterLayer, probability raster giving value of likelyhood of a viable population establishing each cell) or the geographic boundaries (object of class sp::SpatialPolygons) within which to generate points of natural or anthropic origin.}
 
 \item{FACANTH}{Only if HSM is a probability raster. Factor multiplying NANTH before the filtering. This value should be high if HSM has a low proportion of suitable cells.}
 
@@ -37,7 +37,7 @@ simulacro(INIDIST, YEARS, BOUNDARY, NNAT, NANTH, A, C = 2, X, HSM = FALSE,
 
 \item{TRUEANTH}{If FALSE will use HSM to simulate anthropogenic dispersal. If TRUE will use TRUEDB}
 
-\item{TRUEDB}{data frame containing points of anthropic origin (must be in the same format as INIDIST, rows where TRUEDB$Pnat>PROB will be ignored).}
+\item{TRUEDB}{data frame containing points of anthropic origin (must be in the same format as INIDIST, rows where TRUEDB$Pnat>PROB will be ignored). Ignored if TRUEANTH= FALSE, but HSM must then be specified.}
 
 \item{PROB}{threshold over which Pnat is considered natural.}
 }

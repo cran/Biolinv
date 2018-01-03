@@ -45,7 +45,7 @@ modSel<-function(WIN,M0,M2,AV,RAD){
 
   for(i in 1:length(M3)){  #comparison loop
     flush.console()
-    print(paste(i," of ",length(M2)))
+    print(paste(i," of ",length(M3)))
     sv[i]<-spatSim(M0,M3[[i]],WIN,R=RAD)
   }
 

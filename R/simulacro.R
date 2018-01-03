@@ -11,17 +11,17 @@
 #' @param YEARS vector of unique year values for which the simulacro function will generate data (they will be written in the output file).
 #' @param BOUNDARY object of class sp::SpatialPolygons or raster:RasterLayer (0: inside, >= 1: outside) used as geographi boundary for function RPG(). These are the geographic limits within which points or anthropic origin can be generated.
 #' @param NANTH either a vector of numbers of anthropic points to be generated every year or an integer number of points to be generated per time-step.
-#' @param NNAT either a vector of numbers of natural points to be generated every year  or an integer number of points to be generated per time-step..
+#' @param NNAT either a vector of numbers of natural points to be generated every year  or an integer number of points to be generated per time-step.
 #' @param FACANTH Only if HSM is a probability raster. Factor multiplying NANTH before the filtering. This value should be high if HSM has a low proportion of suitable cells.
 #' @param FACNAT Only if HSM is a probability raster. Factor multiplying NNAT before the filtering
 #' @param A Alpha values for the one dimensional dispersal kernel. Each Alpha value will be used to generate a single data frame.
 #' @param C C values for the one dimensional dispersal kernel. C=2: normal kernel; C=1: negative exponenetial kernel; C<1: fat-tailed kernel.
-#' @param HSM either a Habitat Suitability Map ([0;1], object of class raster::RasterLayer, probability raster giving value of likelyhood of a viable population establishing each cell) or the geographic boundaries (object of class sp::SpatialPolygons) within which to generate points of natural origin.
+#' @param HSM either a Habitat Suitability Map ([0;1], object of class raster::RasterLayer, probability raster giving value of likelyhood of a viable population establishing each cell) or the geographic boundaries (object of class sp::SpatialPolygons) within which to generate points of natural or anthropic origin.
 #' @param X set of possible interpopulation distances [km].
 #' @param ITERATIONS number of replicate datasets generated with the same Alpha and C values.
 #' @param DIR directory where to write the simulated datasets. if FALSE they will be saved as data frames in a list object.
 #' @param TRUEANTH If FALSE will use HSM to simulate anthropogenic dispersal. If TRUE will use TRUEDB
-#' @param TRUEDB data frame containing points of anthropic origin (must be in the same format as INIDIST, rows where TRUEDB$Pnat>PROB will be ignored).
+#' @param TRUEDB data frame containing points of anthropic origin (must be in the same format as INIDIST, rows where TRUEDB$Pnat>PROB will be ignored). Ignored if TRUEANTH= FALSE, but HSM must then be specified.
 #' @param PROB threshold over which Pnat is considered natural.
 #'
 #' @return list of data frames. Every data frame represents a simulated biological invasion. if DIR=TRUE one folder will be created for each Alpha and C combination containig all the replicates datasets set in ITERATION. if DIR=FALSE (default) the order in the list will follow the order of the C and Alpha values respectively as set in C and A.

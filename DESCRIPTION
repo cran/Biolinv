@@ -1,12 +1,12 @@
 Package: Biolinv
 Type: Package
 Title: Modelling and Forecasting Biological Invasions
-Version: 0.1-1
+Version: 0.1-2
 Author: Luca Butikofer [aut, cre],
     Beatrix Jones [aut]
 Maintainer: Luca Butikofer <lucabutikofer@gmail.com>
 Description: Analysing and forecasting biological invasions time series
-    with a stochastic, non mechanistic approach that gives proper weight
+    with a stochastic, non-mechanistic approach that gives proper weight
     to the anthropic component, accounts for habitat suitability and
     provides measures of precision for its estimates.
 License: GPL-3
@@ -18,6 +18,6 @@ Imports: raster (>= 2.5-2), fields (>= 8.3-6), spatstat (>= 1.48-0), sp
 RoxygenNote: 5.0.1
 Date: 2017-02-02
 NeedsCompilation: no
-Packaged: 2017-02-02 17:07:13 UTC; lucabutikofer
+Packaged: 2017-12-29 18:10:53 UTC; lucabutikofer
 Repository: CRAN
-Date/Publication: 2017-02-03 14:32:51
+Date/Publication: 2018-01-03 15:21:35 UTC

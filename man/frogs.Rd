@@ -4,13 +4,15 @@
 \name{frogs}
 \alias{frogs}
 \title{Frogs sighting locations.}
-\format{A data frame with 194 rows and 4 columns}
+\format{A dataframe with 194 rows and 4 columns}
+\source{
+Selection of sightings locations form the Herpetofauna Database of New Zealand. Kindly provided by Benno Kappers, Department of Conservation.
+}
 \usage{
 data(frogs)
 }
 \description{
 Dataset containing sighting locations of L. raniformis in New Zealand.
-The columns are as follows:
 }
 \details{
 \itemize{

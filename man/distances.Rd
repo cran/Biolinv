@@ -9,5 +9,8 @@ distances(dati)
 \description{
 These functions are used by the EM() function and were contained in the file 'distances.R'.
 }
+\author{
+Beatrix Jones, Luca Butikofer
+}
 \keyword{internal}
 

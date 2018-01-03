@@ -3,14 +3,13 @@
 \docType{data}
 \name{frogsSum}
 \alias{frogsSum}
-\title{Summary of the dissimilarity values of each of the data frames in 'frogsLacro' with data frame 'frogs'.}
-\format{list of 8 lists of 10 data frames each with 164 rows and 6 columns each.}
+\title{Summary of the dissimilarity values of each of the dataframes in 'frogsLacro' with dataframe 'frogs'.}
+\format{list of 8 lists of 10 dataframes each with 164 rows and 6 columns each.}
 \usage{
 data(frogsSum)
 }
 \description{
-Data frame with dissimilarity values and respective Alpha value as obtained by function modSel() (see examples in ?modSel()).
-The columns are as follows:
+Dataframe with dissimilarity values and respective Alpha value as obtained by function modSel() (see examples in ?modSel).
 }
 \details{
 \itemize{

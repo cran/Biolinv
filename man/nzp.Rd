@@ -3,14 +3,16 @@
 \docType{data}
 \name{nzp}
 \alias{nzp}
-\title{Landmasses of the two main islands of New Zealand.}
+\title{Landmasses of the two main islands of New Zealand as SpatialPolygons.}
 \format{object of class sp::SpatialPolygons.}
+\source{
+mapdata::worldHires()
+}
 \usage{
 data(nzp)
 }
 \description{
-Object of class sp::SpatialPolygons of the North and South Islands of New Zealand in the New Zealand Transverse Mercatore projection.
-Source of data: mapdata::worldHires().
+Object of class sp::SpatialPolygons. North and South Islands of New Zealand in the New Zealand Transverse Mercatore projection.
 }
 \keyword{datasets}
 
