@@ -22,4 +22,3 @@ plot(seq(0,360,1), cosd(seq(0,360,1)), type='l')
 \author{
 Luca Butikofer
 }
-

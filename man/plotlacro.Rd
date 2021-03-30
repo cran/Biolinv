@@ -28,4 +28,3 @@ plotlacro(x= frogsEM, outline= nzp)
 \author{
 Luca Butikofer
 }
-

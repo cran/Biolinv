@@ -22,4 +22,3 @@ Version of 'frogs' Dataset containing sighting locations of L. raniformis in New
 }
 }
 \keyword{datasets}
-

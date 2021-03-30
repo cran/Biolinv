@@ -4,8 +4,8 @@
 \alias{simulacro}
 \title{Builds a simulated biological invasion dataset.}
 \usage{
-simulacro(INIDIST, YEARS, BOUNDARY, NNAT, NANTH, A, C = 2, X, HSM = FALSE,
-  FACANTH = 1, FACNAT = 1, ITERATIONS = 1, DIR = F,
+simulacro(INIDIST, YEARS, BOUNDARY, NNAT, NANTH, A, C = 2, X,
+  HSM = FALSE, FACANTH = 1, FACNAT = 1, ITERATIONS = 1, DIR = F,
   TRUEANTH = c(FALSE, TRUE), TRUEDB, PROB = 0.5)
 }
 \arguments{
@@ -78,4 +78,3 @@ frogsLacro<- simulacro(INIDIST=idst,YEARS=yr,
 \author{
 Luca Butikofer
 }
-

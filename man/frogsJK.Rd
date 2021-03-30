@@ -20,4 +20,3 @@ List of four Jackknife re-samplings of dataframe 'frogs' as returned by function
 }
 }
 \keyword{datasets}
-

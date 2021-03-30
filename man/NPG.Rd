@@ -24,4 +24,3 @@ This function generates points of natural origin around existent points by sampl
 \author{
 Luca Butikofer
 }
-

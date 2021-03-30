@@ -27,4 +27,3 @@ plotAlpha(SSIM= frogsSum, REP= 10, BP=TRUE)
 \author{
 Luca Butikofer
 }
-

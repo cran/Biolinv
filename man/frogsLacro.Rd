@@ -22,4 +22,3 @@ List of eight lists (one per different Alpha value used) each containing ten dat
 }
 }
 \keyword{datasets}
-

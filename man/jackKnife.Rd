@@ -28,4 +28,3 @@ frogsJK<- jackKnife(DF= frogs, N= 10)
 \author{
 Luca Butikofer
 }
-

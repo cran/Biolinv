@@ -24,4 +24,3 @@ This function generates random points within a geographic area set as either sp:
 \author{
 Luca Butikofer
 }
-

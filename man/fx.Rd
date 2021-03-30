@@ -27,4 +27,3 @@ plot(1:1000, fx(x= 1:1000, a= 300, c=2), type='l',
 \author{
 Luca Butikofer
 }
-

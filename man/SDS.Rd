@@ -27,4 +27,3 @@ deltas<- SDS(DIST=dist, probDist=prob)
 \author{
 Luca Butikofer
 }
-

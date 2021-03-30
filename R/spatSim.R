@@ -1,12 +1,13 @@
 #' Computes spatial dissimilarity of two point processes.
 #'
-#' This function uses Rippley's K-function (see Details) to compute spatial dissimilarity of two point processes.
+#' This function uses Ripley's K-function (see Details) to compute spatial dissimilarity of two point processes.
 #'
-#' @importFrom spatstat ppp owin Kest
+#' @importFrom spatstat.core Kest
+#' @importFrom spatstat.geom ppp owin
 #'
 #' @param MOD0 data frame containing 'y' and 'x' coordinates (projected coordinate system) to compare with MOD2.
 #' @param MOD2 data frame containing 'y' and 'x' coordinates (projected coordinate system) to compare with MOD0.
-#' @param WINDOW window of observation of the point patterns (MOD0 and MOD2)(see ?spatstat::owin).Must be an object of class 'owin'.
+#' @param WINDOW window of observation of the point patterns (MOD0 and MOD2)(see ?spatstat.geom::owin).Must be an object of class 'owin'.
 #' @param R numeric vector of searc distances for the K-function.
 #'
 #' @return squared sum of distances between K-functions. This is a measure of spatial dissimilarity.
@@ -18,7 +19,7 @@
 #' @examples
 #' ran<- data.frame('y'=sample(1000),'x'=sample(1000))
 #' nor<- data.frame('y'=rnorm(1000,sd=150,mean=500),'x'=rnorm(1000,sd=150,mean=500))
-#' window<-  spatstat::owin(xrange=c(0,1000),yrange=c(0,1000))
+#' window<-  spatstat.geom::owin(xrange=c(0,1000),yrange=c(0,1000))
 #' spatSim(ran, nor, WINDOW= window, R=0:200)
 
 

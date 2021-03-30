@@ -13,4 +13,3 @@ These functions are used by the EM() function and were contained in the file 'di
 Beatrix Jones, Luca Butikofer
 }
 \keyword{internal}
-

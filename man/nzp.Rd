@@ -15,4 +15,3 @@ data(nzp)
 Object of class sp::SpatialPolygons. North and South Islands of New Zealand in the New Zealand Transverse Mercatore projection.
 }
 \keyword{datasets}
-

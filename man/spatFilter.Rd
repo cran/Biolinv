@@ -22,4 +22,3 @@ This function rarefies a set of points using a raster map of probabilities of a 
 \author{
 Luca Butikofer
 }
-

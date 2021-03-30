@@ -30,4 +30,3 @@ frogsEM<- EM(dataset= frogs, randompoints= randp, sigma=6, pi=0.5)
 \author{
 Beatrix Jones, Luca Butikofer
 }
-
